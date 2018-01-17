@@ -1,5 +1,5 @@
 .fa-email:before {
-    background-image: url("img/bw/email.png");
+    background-image: url("../img/bw/email.png");
     background-size: 25px 25px;
     display: inline-block;
     width: 25px;
@@ -8,7 +8,7 @@
 }
 
 .fa-github:before {
-    background-image: url("img/bw/github.png");
+    background-image: url("../img/bw/github.png");
     background-size: 25px 25px;
     display: inline-block;
     width: 25px;
@@ -17,7 +17,7 @@
 }
 
 .fa-linkedin:before {
-    background-image: url("img/bw/linkedin.png");
+    background-image: url("../img/bw/linkedin.png");
     background-size: 25px 25px;
     display: inline-block;
     width: 25px;
@@ -26,7 +26,7 @@
 }
 
 .fa-phone:before {
-    background-image: url("img/bw/phone.png");
+    background-image: url("../img/bw/phone.png");
     background-size: 25px 25px;
     display: inline-block;
     width: 25px;
@@ -35,7 +35,7 @@
 }
 
 .fa-place-marker:before {
-    background-image: url("img/bw/place-marker.png");
+    background-image: url("../img/bw/place-marker.png");
     background-size: 25px 25px;
     display: inline-block;
     width: 25px;
@@ -44,7 +44,7 @@
 }
 
 .fa-skype:before {
-    background-image: url("img/bw/skype.png");
+    background-image: url("../img/bw/skype.png");
     background-size: 25px 25px;
     display: inline-block;
     width: 25px;
@@ -53,7 +53,7 @@
 }
 
 .fa-stack-overflow:before {
-    background-image: url("img/bw/stack-overflow.png");
+    background-image: url("../img/bw/stack-overflow.png");
     background-size: 25px 25px;
     display: inline-block;
     width: 25px;
@@ -62,7 +62,7 @@
 }
 
 .fa-travis-ci:before {
-    background-image: url("img/bw/travis-ci.png");
+    background-image: url("../img/bw/travis-ci.png");
     background-size: 25px 25px;
     display: inline-block;
     width: 25px;
