@@ -1,0 +1,71 @@
+.fa-email:before {
+    background-image: url("img/bw/email.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+}
+
+.fa-github:before {
+    background-image: url("img/bw/github.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+}
+
+.fa-linkedin:before {
+    background-image: url("img/bw/linkedin.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+}
+
+.fa-phone:before {
+    background-image: url("img/bw/phone.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+}
+
+.fa-place-marker:before {
+    background-image: url("img/bw/place-marker.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+}
+
+.fa-skype:before {
+    background-image: url("img/bw/skype.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+}
+
+.fa-stack-overflow:before {
+    background-image: url("img/bw/stack-overflow.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+}
+
+.fa-travis-ci:before {
+    background-image: url("img/bw/travis-ci.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+}
