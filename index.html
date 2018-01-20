@@ -5,7 +5,7 @@
 
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="favicon.ico" rel="shortcut icon"/>
+    <link rel="shortcut icon" type="image/png" href="img/github.png">
     <title>Aydar Gumerbaev CV</title>
 
     <!-- jQuery -->
@@ -19,52 +19,52 @@
             crossorigin="anonymous"></script>
 
     <!-- Custom -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <script type="text/javascript">
-        function calculateAge() {
-            var birthday = new Date(1988, 12, 7);
-            var ageDifMs = Date.now() - birthday.getTime();
-            var ageDate = new Date(ageDifMs); // miliseconds from epoch
-            var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+		function calculateAge() {
+			var birthday = new Date(1988, 12, 7);
+			var ageDifMs = Date.now() - birthday.getTime();
+			var ageDate = new Date(ageDifMs); // miliseconds from epoch
+			var age = Math.abs(ageDate.getUTCFullYear() - 1970);
 
-            var elem = document.getElementById("age");
-            elem.innerText = age + "YO";
-        }
+			var elem = document.getElementById("age");
+			elem.innerText = age + "YO";
+		}
 
-        function getIpInfo() {
-            $.ajax({
-                url: 'https://freegeoip.net/json/',
-                type: 'GET',
-                crossDomain: true,
-                dataType: 'jsonp',
-                success: function (data) {
-                    var json = {};
-                    json['value1'] = $(location).attr('hostname');
-                    json['value2'] = data['ip'];
-                    json['value3'] = data['city'] + ' / ' + data['country_code'] + ' [' + data['latitude'] + ' ' + data['longitude'] + ']';
+		function getIpInfo() {
+			$.ajax({
+				url: 'https://freegeoip.net/json/',
+				type: 'GET',
+				crossDomain: true,
+				dataType: 'jsonp',
+				success: function (data) {
+					var json = {};
+					json['value1'] = $(location).attr('hostname');
+					json['value2'] = data['ip'];
+					json['value3'] = data['city'] + ' / ' + data['country_code'] + ' [' + data['latitude'] + ' ' + data['longitude'] + ']';
 
-                    $.ajax({
-                        url: 'https://maker.ifttt.com/trigger/web/with/key/dCkcLEwU6kWOalQayTbEP7',
-                        data: json,
-                        contentType: "application/json; charset=utf-8",
-                        type: 'POST',
-                        crossDomain: true,
-                        dataType: 'jsonp'
-                    });
-                }
-            });
-        }
+					$.ajax({
+						url: 'https://maker.ifttt.com/trigger/web/with/key/dCkcLEwU6kWOalQayTbEP7',
+						data: json,
+						contentType: "application/json; charset=utf-8",
+						type: 'POST',
+						crossDomain: true,
+						dataType: 'jsonp'
+					});
+				}
+			});
+		}
 
-        function init() {
-            calculateAge();
+		function init() {
+			calculateAge();
 
-            var searchParams = new URLSearchParams(window.location.search);
-            if (searchParams.get('noSpy') === null) {
-                getIpInfo();
-            }
-        }
+			var searchParams = new URLSearchParams(window.location.search);
+			if (searchParams.get('noSpy') === null) {
+				getIpInfo();
+			}
+		}
     </script>
 </head>
 <body onload="init()">
@@ -89,31 +89,34 @@
                 <h2>About Me</h2>
 
                 <p>
-                    I am searching for advanced projects with cool people. Those should solve complex and important
-                    tasks using modern technology. For example, I'd like to work with Docker, Microservices and Spring.
+                    I'm looking for interesting projects with cool people.
+                    At the moment I really want to "swap the context" and move to another country such Canada, USA,
+                    Germany or Netherlands.
+                    You are welcome to write or call me, I will be glad to talk with you)
                 </p>
             </div>
             <div class="box">
                 <h2>My personality</h2>
 
                 <p>
-                    I always try to find out if I am really solving the task which needs to be solved. Sometimes it is
-                    better to solve completely different task... Or even not to solve it at all.
-                    I am always responsible for deadlines that I set and try to cover mistakes and dangers.
-                    I like spreading cool ideas and technologies between colleagues and educating juniors.
+                    I genuinely love the work I'm interested in! New interesting tasks and modern technologies is that I
+                    really miss.
+                    I'm always responsible for deadlines, try to cover mistakes and dangers and very like to produce
+                    clean and tidy code.
+                    I like to attend different meet-ups, learn new modern trends and spread cool ideas with colleagues.
                 </p>
             </div>
 
             <!-- EDUCATION -->
             <div class="box">
                 <h2>Education</h2>
+
                 <ul class="clearfix" id="education">
                     <li>
                         <div class="year pull-left">2011</div>
                         <div class="description pull-right">
-                            <h3>Master's Degree</h3>
-
-                            <p>Master's Degree in Software Engineering (Kazan State Technical University)
+                            <h3>Master Degree</h3>
+                            <p>Master Degree in Software Development (Kazan State Technical University)
                             </p>
                         </div>
                     </li>
@@ -121,7 +124,6 @@
                         <div class="year pull-left">2006</div>
                         <div class="description pull-right">
                             <h3>Graduated from lyceum with profound study of English</h3>
-
                             <p>Here I took interest in studying Pascal/Delphi and HTML. Created my first programs and
                                 web sites.</p>
                         </div>
@@ -130,7 +132,6 @@
                         <div class="year pull-left">1988</div>
                         <div class="description pull-right">
                             <h3>Born in Kazan (Tatarstan, Russia)</h3>
-
                             <p></p>
                         </div>
                     </li>
@@ -141,6 +142,7 @@
             <!-- EXAMINATIONS -->
             <div class="box" hidden>
                 <h2>Tests, examinations</h2>
+
                 <ul class="clearfix" id="tests">
                     <li>
                         <div class="year pull-left">YEAR</div>
@@ -221,7 +223,6 @@
                     <div class="icon pull-left text-center"><span class="fa fa-place-marker"></span></div>
                     <div class="title only pull-right">Kazan, Russia</div>
                 </div>
-
                 <div class="contact-item">
                     <div class="icon pull-left text-center"><span class="fa fa-phone"></span></div>
                     <div class="title only pull-right">+7 905 023 84 95</div>
@@ -274,7 +275,7 @@
                     <div class="item-skills" style="width: 90%;">Java</div>
                     <div class="item-skills" style="width: 90%;">SQL (Oracle, PostgreSQL)</div>
                     <div class="item-skills" style="width: 80%;">Spring Framework</div>
-                    <div class="item-skills" style="width: 80%;">System Administration (Linux, Docker, CI, etc)</div>
+                    <div class="item-skills" style="width: 80%;">DevOps (Linux, Docker, CI, etc)</div>
                     <div class="item-skills" style="width: 80%;">Version Control (Git, SVN)</div>
                     <div class="item-skills" style="width: 70%;">Microservices (Spring Cloud, ELK)</div>
                     <div class="item-skills" style="width: 70%;">Build Tools (Maven, Gradle)</div>
@@ -282,10 +283,10 @@
                     <div class="item-skills" style="width: 60%;">JavaScript (client side - jQuery)</div>
                     <div class="item-skills" style="width: 20%;">NoSQL (MongoDB)</div>
                     <div class="skills-legend clearfix">
+                        <div class="legend-left legend">Null</div>
                         <div class="legend-left legend">Beginner</div>
-                        <div class="legend-left legend"><span>Proficient</span></div>
-                        <div class="legend-right legend"><span>Expert</span></div>
-                        <div class="legend-right legend">Master</div>
+                        <div class="legend-right legend"><span>Proficient</span></div>
+                        <div class="legend-right legend">Expert</div>
                     </div>
                 </div>
             </div>
