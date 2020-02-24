@@ -32,15 +32,6 @@
 			var elem = document.getElementById("age");
 			elem.innerText = age + "YO";
 		}
-
-		function init() {
-			calculateAge();
-
-			var searchParams = new URLSearchParams(window.location.search);
-			if (searchParams.get('noSpy') === null) {
-				getIpInfo();
-			}
-		}
     </script>
 
     <!-- Yandex.Metrika counter -->
@@ -58,7 +49,7 @@
     <!-- /Yandex.Metrika counter -->
 
 </head>
-<body onload="init()">
+<body onload="calculateAge()">
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
@@ -299,7 +290,7 @@
             </div>
         </div>
     </div>
+    <noscript><div><img src="https://mc.yandex.ru/watch/57677749" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </div>
-<noscript><div><img src="https://mc.yandex.ru/watch/57677749" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 </html>
