@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNZE8LYV6V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VNZE8LYV6V');
+    </script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
@@ -33,21 +43,6 @@
 			elem.innerText = age + "YO";
 		}
     </script>
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(57677749, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true
-        });
-    </script>
-    <!-- /Yandex.Metrika counter -->
-
 </head>
 <body onload="calculateAge()">
 <div class="container">
@@ -308,7 +303,6 @@
             </div>
         </div>
     </div>
-    <noscript><div><img src="https://mc.yandex.ru/watch/57677749" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </div>
 </body>
 </html>
