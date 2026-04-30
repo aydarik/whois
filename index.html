@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Aidar Gumerbaev | Senior Software Engineer</title>
 
     <!-- Google tag (gtag.js) -->
@@ -19,16 +20,26 @@
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 fill=%22%232563eb%22>{}</text></svg>">
+    <link href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 fill=%22%232563eb%22>{}</text></svg>"
+          rel="icon">
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
+
+        .skill-tag {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            filter: brightness(0.95);
+        }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-900 leading-relaxed">
 
 <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -39,17 +50,18 @@
         </h1>
 
         <div class="flex items-center space-x-4">
-            <a href="https://linkedin.com/in/agumerbaev" target="_blank"
-               class="text-gray-500 hover:text-blue-600 transition text-sm">
+            <a class="text-gray-500 hover:text-blue-600 transition text-sm" href="https://linkedin.com/in/agumerbaev"
+               target="_blank">
                 <i class="fab fa-linkedin mr-1"></i> LinkedIn
             </a>
-            <a href="https://github.com/aydarik" target="_blank"
-               class="text-gray-500 hover:text-blue-600 transition text-sm">
+            <a class="text-gray-500 hover:text-blue-600 transition text-sm" href="https://github.com/aydarik"
+               target="_blank">
                 <i class="fab fa-github mr-1"></i> GitHub
             </a>
-            <a href="agumerbaev_cv.pdf"
-               class="inline-flex items-center px-5 py-2 bg-blue-600 text-white text-sm font-bold rounded-full hover:bg-blue-700 transition shadow-md">
-                <i class="fas fa-download mr-2"></i> Download CV
+            <a class="inline-flex items-center px-5 py-2 bg-blue-600 text-white text-sm font-bold rounded-lg hover:bg-blue-700 transition shadow-md hover:shadow-lg active:scale-95"
+               href="agumerbaev_cv.pdf"
+               target="_blank">
+                <i class="fas fa-file-pdf mr-2"></i> Download CV
             </a>
         </div>
     </div>
@@ -58,8 +70,9 @@
 <main class="max-w-5xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
     <aside class="lg:col-span-1 space-y-10">
         <div class="text-center lg:text-left">
-            <img src="PXL_20260301_083634365.PORTRAIT.jpg" alt="Aidar Gumerbaev"
-                 class="w-48 h-48 rounded-2xl object-cover mx-auto lg:mx-0 shadow-lg mb-6 border-4 border-white">
+            <img alt="Aidar Gumerbaev"
+                 class="w-48 h-48 rounded-2xl object-cover mx-auto lg:mx-0 shadow-lg mb-6 border-4 border-white"
+                 src="PXL_20260301_083634365.PORTRAIT.jpg">
             <h2 class="text-3xl font-bold mb-2 leading-tight">Senior Software Engineer</h2>
             <p class="text-gray-600 flex items-center justify-center lg:justify-start">
                 <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> Berlin, Germany (remote available)
@@ -80,32 +93,77 @@
         <section>
             <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 border-b pb-2">Skills</h3>
             <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">Java</span>
-                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">Kotlin</span>
-                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Gosu</span>
-                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-semibold">Spring</span>
-                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-semibold">Micronaut</span>
-                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Guidewire</span>
-                <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-semibold">Kubernetes</span>
-                <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-semibold">Docker</span>
-                <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-semibold">AWS</span>
-                <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-xs font-semibold">System Design</span>
-                <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-semibold">SQL</span>
-                <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-semibold">Git</span>
-                <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-semibold">CI/CD</span>
+                <!-- Languages -->
+                <span class="skill-tag px-3 py-1 bg-sky-50/50 text-sky-700/80 border border-sky-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-code opacity-70"></i> Java
+                </span>
+                <span class="skill-tag px-3 py-1 bg-sky-50/50 text-sky-700/80 border border-sky-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-code opacity-70"></i> Kotlin
+                </span>
+                <span class="skill-tag px-3 py-1 bg-sky-50/50 text-sky-700/80 border border-sky-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-code opacity-70"></i> Gosu
+                </span>
+
+                <!-- Frameworks -->
+                <span class="skill-tag px-3 py-1 bg-amber-50/50 text-amber-700/80 border border-amber-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-leaf opacity-70"></i> Spring
+                </span>
+                <span class="skill-tag px-3 py-1 bg-amber-50/50 text-amber-700/80 border border-amber-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-bolt opacity-70"></i> Micronaut
+                </span>
+
+                <!-- Domain -->
+                <span class="skill-tag px-3 py-1 bg-purple-50/50 text-purple-700/80 border border-purple-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-shield-halved opacity-70"></i> Guidewire
+                </span>
+
+                <!-- Infrastructure -->
+                <span class="skill-tag px-3 py-1 bg-emerald-50/50 text-emerald-700/80 border border-emerald-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-dharmachakra opacity-70"></i> Kubernetes
+                </span>
+                <span class="skill-tag px-3 py-1 bg-emerald-50/50 text-emerald-700/80 border border-emerald-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fab fa-docker opacity-70"></i> Docker
+                </span>
+                <span class="skill-tag px-3 py-1 bg-emerald-50/50 text-emerald-700/80 border border-emerald-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fab fa-aws opacity-70"></i> AWS
+                </span>
+                <span class="skill-tag px-3 py-1 bg-emerald-50/50 text-emerald-700/80 border border-emerald-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-code-branch opacity-70"></i> Git
+                </span>
+                <span class="skill-tag px-3 py-1 bg-emerald-50/50 text-emerald-700/80 border border-emerald-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-sync opacity-70"></i> CI/CD
+                </span>
+
+                <!-- Databases -->
+                <span class="skill-tag px-3 py-1 bg-rose-50/50 text-rose-700/80 border border-rose-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-database opacity-70"></i> SQL
+                </span>
+
+                <!-- Strategy -->
+                <span class="skill-tag px-3 py-1 bg-slate-50/50 text-slate-700/80 border border-slate-100/50 rounded-full text-[11px] font-bold flex items-center gap-1.5">
+                    <i class="fas fa-diagram-project opacity-70"></i> System Design
+                </span>
             </div>
         </section>
 
         <section>
             <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 border-b pb-2">Languages</h3>
             <ul class="text-sm space-y-2">
-                <li class="flex justify-between"><span>Russian & Tatar</span> <span
-                        class="text-gray-500 italic">Native</span></li>
-                <li class="flex justify-between"><span>English</span> <span
-                        class="text-gray-500 italic">Professional</span></li>
-                <li class="flex justify-between"><span>German</span> <span class="text-gray-500 italic">Intermediate (B2 in progress)</span>
+                <li class="flex justify-between">
+                    <span>Russian & Tatar</span>
+                    <span class="text-gray-500 italic">Native</span>
                 </li>
-                <li class="flex justify-between"><span>Turkish</span> <span class="text-gray-500 italic">Basic</span>
+                <li class="flex justify-between">
+                    <span>English</span>
+                    <span class="text-gray-500 italic">Professional</span>
+                </li>
+                <li class="flex justify-between">
+                    <span>German</span>
+                    <span class="text-gray-500 italic">Intermediate (B2 in progress)</span>
+                </li>
+                <li class="flex justify-between">
+                    <span>Turkish</span>
+                    <span class="text-gray-500 italic">Basic</span>
                 </li>
             </ul>
         </section>
@@ -113,11 +171,21 @@
         <section>
             <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 border-b pb-2">Interests</h3>
             <div class="flex flex-wrap gap-2">
-                <span class="text-xs font-semibold bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg border border-gray-200">Programming</span>
-                <span class="text-xs font-semibold bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg border border-gray-200">Home automation</span>
-                <span class="text-xs font-semibold bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg border border-gray-200">Cars</span>
-                <span class="text-xs font-semibold bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg border border-gray-200">Travelling</span>
-                <span class="text-xs font-semibold bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg border border-gray-200">DIY</span>
+                <span class="skill-tag text-[11px] font-bold bg-slate-50 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 flex items-center gap-2">
+                    <i class="fas fa-laptop-code opacity-70"></i> Programming
+                </span>
+                <span class="skill-tag text-[11px] font-bold bg-slate-50 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 flex items-center gap-2">
+                    <i class="fas fa-house-signal opacity-70"></i> Home automation
+                </span>
+                <span class="skill-tag text-[11px] font-bold bg-slate-50 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 flex items-center gap-2">
+                    <i class="fas fa-car opacity-70"></i> Cars
+                </span>
+                <span class="skill-tag text-[11px] font-bold bg-slate-50 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 flex items-center gap-2">
+                    <i class="fas fa-plane-departure opacity-70"></i> Traveling
+                </span>
+                <span class="skill-tag text-[11px] font-bold bg-slate-50 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 flex items-center gap-2">
+                    <i class="fas fa-hammer opacity-70"></i> DIY
+                </span>
             </div>
         </section>
     </aside>
@@ -135,7 +203,12 @@
                         <h4 class="text-xl font-bold">Senior Software Engineer — FRI:DAY</h4>
                         <span class="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-md">2020 – 2026</span>
                     </div>
-                    <p class="text-sm text-gray-500 mb-4 italic">Digital insurance platform, Berlin</p>
+                    <p class="text-sm text-gray-500 mb-2 italic">Digital insurance platform, Berlin</p>
+                    <a class="inline-flex items-center px-3 py-1.5 bg-white border border-blue-200 text-blue-600 text-[11px] font-bold rounded-lg hover:bg-blue-50 transition shadow-sm mb-4"
+                       href="agumerbaev_zeugnis_friday.pdf"
+                       target="_blank">
+                        <i class="fas fa-file-pdf mr-2 text-red-500"></i> Zeugnis (DE)
+                    </a>
                     <ul class="text-gray-700 space-y-2 text-sm list-disc list-outside mb-4">
                         <li>Specialized in Guidewire InsuranceSuite (PolicyCenter) for motor insurance</li>
                         <li>Integrated key German regulatory interfaces (eVB, VWB) and externals (Check24)</li>
@@ -144,11 +217,12 @@
                         <li>Contributed to Guidewire v9 → v10 → Cloud migration</li>
                     </ul>
                     <div class="flex flex-wrap gap-2">
-                        <code class="text-[10px] bg-gray-100 px-2 py-1 rounded">Guidewire InsuranceSuite</code>
-                        <code class="text-[10px] bg-gray-100 px-2 py-1 rounded">Kotlin</code>
-                        <code class="text-[10px] bg-gray-100 px-2 py-1 rounded">Java</code>
-                        <code class="text-[10px] bg-gray-100 px-2 py-1 rounded">Kubernetes</code>
-                        <code class="text-[10px] bg-gray-100 px-2 py-1 rounded">AWS</code>
+                        <span class="px-2 py-0.5 bg-purple-50/50 text-purple-700/80 border border-purple-100/50 rounded text-[9px] font-bold">Guidewire</span>
+                        <span class="px-2 py-0.5 bg-sky-50/50 text-sky-700/80 border border-sky-100/50 rounded text-[9px] font-bold">Kotlin</span>
+                        <span class="px-2 py-0.5 bg-sky-50/50 text-sky-700/80 border border-sky-100/50 rounded text-[9px] font-bold">Java</span>
+                        <span class="px-2 py-0.5 bg-sky-50/50 text-sky-700/80 border border-sky-100/50 rounded text-[9px] font-bold">Gosu</span>
+                        <span class="px-2 py-0.5 bg-emerald-50/50 text-emerald-700/80 border border-emerald-100/50 rounded text-[9px] font-bold">Kubernetes</span>
+                        <span class="px-2 py-0.5 bg-emerald-50/50 text-emerald-700/80 border border-emerald-100/50 rounded text-[9px] font-bold">AWS</span>
                     </div>
                 </div>
 
@@ -228,10 +302,10 @@
 <footer class="bg-gray-900 text-white py-12 mt-12">
     <div class="max-w-5xl mx-auto px-6 text-center">
         <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-400 mb-8">
-            <a href="mailto:aydar@gumerbaev.ru" class="hover:text-white">
+            <a class="hover:text-white" href="mailto:aydar@gumerbaev.ru">
                 <i class="fas fa-envelope mr-2"></i> aydar@gumerbaev.ru
             </a>
-            <a href="tel:+4917677599239" class="hover:text-white">
+            <a class="hover:text-white" href="tel:+4917677599239">
                 <i class="fas fa-phone mr-2"></i> +49 176 775 99 239
             </a>
         </div>
