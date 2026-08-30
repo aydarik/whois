@@ -1,0 +1,17 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-tag {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.95);
+}
